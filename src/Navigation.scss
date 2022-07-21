@@ -1,0 +1,61 @@
+$col-theme: #3e74ae;
+$col-background: #d0b8a3;
+$col-text: #1d2631;
+$col-muted-accent: #3b5979;
+$col-accent: #5aa2d0;
+$font-heading: 'BioRhyme',
+serif;
+$font-paragraph: 'Space Grotesk',
+sans-serif;
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100vw;
+  background-color: $col-theme;
+  z-index: 100;
+
+}
+
+.menu {
+  z-index: 100;
+}
+
+.logo a {
+  color: $col-text;
+  text-decoration: none;
+}
+
+.nav-left {
+  padding-right: auto;
+}
+
+.nav-right {
+  display: grid;
+  place-items: center;
+  padding-right: 1em;
+
+  .link-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.nav-right a {
+  height: 100%;
+  color: white;
+}
+
+.nav-link {
+  font-family: $font-heading;
+  font-size: 1.2em;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding-right: 1em;
+}
+
+.nav-link-active {
+  color: red;
+}
